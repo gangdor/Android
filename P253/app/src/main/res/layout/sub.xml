@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@android:color/holo_orange_light">
+
+    <TextView
+        android:id="@+id/stv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="부분화면"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sbt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickbt2"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/sbt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickbt2"
+        android:text="Button" />
+</LinearLayout>

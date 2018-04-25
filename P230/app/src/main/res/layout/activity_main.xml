@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickBtn"
+            android:text="HOME" />
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <WebView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/bt_naver"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:onClick="clickBtn"
+            android:text="네이버" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="413dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="clickBtn"
+                    android:text="회원가입" />
+
+                <Button
+                    android:id="@+id/bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="clickBtn"
+                    android:text="로그인" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_analy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="clickBtn"
+                android:text="분석" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ID_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="108dp"
+                android:text="ID"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/PWD_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ID_apply"
+                android:layout_marginTop="198dp"
+                android:text="PWD"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/tx_applyid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ID_apply"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp"
+                android:ems="10"
+                android:hint="Input your ID"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_applypw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PWD_apply"
+                android:layout_alignStart="@+id/tx_applyid"
+                android:ems="10"
+                android:hint="Input your PWD"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bt_doapply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="162dp"
+                android:onClick="clickBtn"
+                android:text="가입" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ID_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="108dp"
+                android:text="ID"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/PWD_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ID_login"
+                android:layout_marginTop="198dp"
+                android:text="PWD"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/tx_loginid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ID_login"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp"
+                android:ems="10"
+                android:hint="Input your ID"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_loginpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PWD_login"
+                android:layout_alignStart="@+id/tx_loginid"
+                android:ems="10"
+                android:hint="Input your PWD"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bt_dologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="162dp"
+                android:onClick="clickBtn"
+                android:text="로그인" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
